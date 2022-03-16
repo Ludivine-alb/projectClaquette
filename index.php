@@ -10,5 +10,10 @@
 <body>
     <nav class="navbar">
         <div class="navbar__logo">Logo</div>
+    </nav>
+    <ul>
+        <ul class="navbar__links">
+            <li class="navbar__link"><a href="#">Home</a></li> 
+    </ul>
 </body>
 </html>

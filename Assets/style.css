@@ -1,2 +1,19 @@
  * {
-     margin : 0; }
+     margin : 0; 
+     box-sizing:border-box;
+ }
+
+/* DECLARACION DE LAS VARIABLAS*/
+
+     :root  {
+
+     --background-color: #fffef8;
+     --font-color: Black;
+     --line-heigth: 1.5;
+     --primary-color: #181F1C;
+     --secondary-color: #274029;
+     --borderversionMobilefirst: 1px, solid, black;
+     /*--borderversionDesktop: 2px, solid, black;*/
+    
+
+     }

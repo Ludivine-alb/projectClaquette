@@ -5,57 +5,220 @@
 */
 /* 1. Use a more-intuitive box-sizing model.
     2. Remove default margin */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  /* 3. Allow percentage-based heights in the application */
-  html, body {
-    height: 100%;
-  }
-  /*
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+}
+/*
     Typographic tweaks!
     4. Add accessible line-height
     5. Improve text rendering
   */
-  body {
-    line-height: 1.5;
-    /* -webkit-font-smoothing: antialiased; */
-  }
-  /*
+body {
+  line-height: 1.5;
+  /* -webkit-font-smoothing: antialiased; */
+}
+/*
     6. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     7. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     8. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
 
 
 
 /* Variables */
 :root {
-    --background-color: #FFFEF8;
-    --main-color: #181f1c;
-    --secondary-color: #274029;
-
+  --background-color: #fffef8;
+  --main-color: #181f1c;
+  --secondary-color: #274029;
+  --titles-margin-top: 1.5rem;
+  --titles-margin-sides: 1rem;
+  --titles-margin-bottom: 0.5rem;
+  --paragraphs-margin-topAndBottom: 0.5rem;
+  --paragraphs-margin-sides: 1rem;
 }
 
 /* Main Style */
-html{
-    background-color: var(--background-color);
+html {
+  background-color: var(--background-color);
 }
+
 h1 {
-    text-align: center;
+  text-align: center;
+  font-family: 'Roboto Serif', serif;
+  font-weight: lighter;
+  margin: var(--titles-margin-top) var(--titles-margin-sides) var(--titles-margin-bottom);
+}
+
+/* FAQ Style */
+h2 {
+  font-family: 'Roboto Serif', serif;
+  margin: var(--titles-margin-top) var(--titles-margin-sides) var(--titles-margin-bottom);
+}
+
+p {
+  font-family: "Raleway";
+  margin: var(--paragraphs-margin-topAndBottom) var(--paragraphs-margin-sides);
+}
+
+.faq-heading {
+  border-bottom: 0.5rem solid var(--main-color);
+  padding: 20px 5vw;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10vw;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+  .faq-container {
+    /* background-color: blue; */
+    margin: 0 15vw;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .faq-container {
+    /* background-color: red; */
+    margin: 0 25vw;
+  }
+}
+
+.hr-line {
+  border: 1px solid var(--main-color);
+  width: 60%;
+  margin: auto;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  /* background-color: #eee; */
+  color: black;
+  cursor: pointer;
+  padding: 2rem 1rem;
+  width: auto;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body {
+  margin: auto;
+  width: 90%;  
+}
+
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+  .faq-body {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .faq-body {
+    width: 70%;
+  }
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    cursor: url(Images/icons8-sandal-64.png), auto;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0;
+    background-color: var(--background-color);
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    /* content: '\02795'; */
+    /* Unicode character for "plus" sign (+) */
+    content: url(Images/rsz_toggle_sandale0.png);
+    /* font-size: 13px; */
+    /* background-color: red; */
+    float: right;
+    /* margin-left: 5px; */
+}
+
+.active:after {
+    /* content: "\2796"; */
+    /* Unicode character for "minus" sign (-) */
+    content: url(Images/rsz_1toggle_sandale1.png);
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 640px) {
+  .faq-page:after {
+    content: url(Images/rsz_mobile_sandale0.png)
+  }
+
+  .active:after {
+    content: url(Images/rsz_mobile_sandale1.png)
+  }
+}
+
+/* ERROR PAGE STYLE */
+
+.error-page {
+  /* Start https://www.cursors-4u.com */ cursor: url(https://cur.cursors-4u.net/anime/ani-12/oth1125.ani), url(https://cur.cursors-4u.net/anime/ani-12/oth1125.png), auto !important; /* End https://www.cursors-4u.com */
+}
+
+.error-title {
+  background: repeating-linear-gradient(to right,red,orange,yellow, green, blue,indigo,violet 7vw);
+  font-size: 15vw;
+  color: black;
+}
+
+#runAwayButton {
+  background: linear-gradient(to right,red,orange,yellow, green, blue,indigo,violet);
+  color: var(--background-color);
+  font-family: inherit;
+  font-family: 'Raleway';
+  font-size: 3vw;
+  color: black;
+  width: 50vw;
+  height: 15vw;
+  display: block;
+  margin: 0 auto;
+  cursor: url(Images/icons8-rick-sanchez-100.png), auto;
 }

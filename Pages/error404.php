@@ -16,14 +16,14 @@
     <!-- <?php include '/layouts/header.php' ?> -->
 
     <main>
-        <h1 class="error-title">Error 404</h1>
+        <h1 class="error-maintitle">Error 404</h1>
 
         <section>
-            <h2>Message from the Claquette Project</h2>
-            <p>Please try clicking below.</p><br />
+            <h2 class="error-text">Message from the Claquette Project</h2>
+            <p class="error-text">Please click below.</p><br />
             <div class="error-button-container">
-                <a href="/Pages/Contact.php">
-                    <button id="runAwayButton" type="button">CLICK ME TO GO BACK</button>
+                <a href="../index.php">
+                    <button id="runAwayButton" type="button">CLICK ME TO GO BACK HOME</button>
                 </a>
             </div>
         </section>

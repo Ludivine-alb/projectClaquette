@@ -1,14 +1,152 @@
- @media screen and (max-width  :360px) {
- 
-     
-h1 {
-    font-family: "Roboto serif", serif;
-    font-weight: lighter;
-    text-align: flex-end;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
+
+
+body {
+    background-color: #ffffffa6;
+   
+    
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #ffffffd5;
+    font-family: 'Roboto serif', serif;
+    color: black;
+
+
+}
+
+div > p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+
+p {
+font-family: 'Raleway' sans-serif;
+margin-top: 1rem;
+padding: 1rem;
+line-height: 1.5;
+}
+
+p,select {
+    display: inline-block;
+}
+
+.my-select-menu{
+    width: 30%;
+
+}
+
 
 img {
     max-width: 100%;
-	height: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    filter: grayscale(1);
+    border: 1px solid black;
 }
- }
+
+img:hover {
+    filter: grayscale(0) ;
+}
+
+
+
+button{
+    float: right;
+    margin-top: 3.5rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 1px solid rgb(165, 163, 163);
+    
+}
+
+button:focus {
+    color: rgb(255, 255, 255);
+}
+
+.Card1, .Card2, .Card3, .Card4{
+    padding: 1rem;
+}
+
+button:hover {
+
+  background-color  :#a8ceb5;
+  border: 1px solid #627a6b;
+}
+
+.Description {
+    display: none;
+}
+
+footer {
+    background-color: rgb(138, 134, 134);
+}
+
+
+    @media only screen  and (min-width: 560px) and (max-width: 1000px) {
+        
+
+        .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 0.5fr repeat(1, 1fr);
+                grid-column-gap: 0px;
+        
+                }
+                
+                .div1 { grid-area: 1 / 1 / 2 / 3; }
+                .div2 { grid-area: 2 / 1 / 3 / 2; }
+                .div3 { grid-area: 2 / 2 / 3 / 3; }
+                .div4 { grid-area: 3 / 1 / 4 / 3; }
+                .div5 { grid-area: 3 / 1 / 4 / 2; }
+            }
+
+            @media only screen and (min-width:1000px) {
+
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: 1fr;
+                    column-gap: 0;
+                    row-gap: 0px;
+                    margin-top: 1.5rem;
+                    }
+                    
+                    .title { grid-area: 1 / 1 / 2 / 5; }
+                    .Card1 { grid-area: 2 / 1 / 3 / 2; }
+                    .Card2 { grid-area: 2 / 2 / 3 / 3; }
+                    .Card3 { grid-area: 2 / 3 / 3 / 4; }
+                    .Card4 { grid-area: 2 / 4 / 3 / 5; }
+
+                
+
+                 button {
+                     border-radius: 0;
+                     padding: 0.5rem;
+                     margin-top: 4rem;
+                 }
+          
+                 .Description{
+                     display: block;
+                     inline-size: fit-content;
+                     text-align: center;
+                     font-family: 'Raleway', sans-serif;
+                     background-color  :#cae2d2;
+                     border: 1px solid #8aaf98;
+                     margin: 1rem;
+                    }
+
+                 }
+
+
+        

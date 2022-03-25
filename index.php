@@ -7,6 +7,7 @@
     <title>Claquette Project</title>
     <link rel="stylesheet" href="/Assets/home.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/Assets/Images/icons8-sandal-64.png">
 </head>
 <body>
 
@@ -14,13 +15,13 @@
     <nav>
         <div class="logo">
             <a href="#"></a>
-            <img src="/Assets/Images/Logo-test.png" alt="logo claquette">
+            <img src="/Assets/Images/Logo_White.png" alt="logo claquette">
         </div>
         <div class="onglets">
             <a href="/">Accueil</a>
-            <a href="/Pages/Products">Produits</a>
-            <a href="/Pages/Faq">Faq</a>
-            <a href="/Pages/Contact">Contact</a>
+            <a href="/Pages/Products.php">Produits</a>
+            <a href="/Pages/faq.php">Faq</a>
+            <a href="/Pages/Contact.php">Contact</a>
         </div>
     </nav>
         <div class="principal"></div>

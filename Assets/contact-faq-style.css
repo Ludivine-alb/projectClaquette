@@ -60,12 +60,13 @@ h6 {
 :root {
   --background-color: #fffef8;
   --main-color: #181f1c;
-  --secondary-color: #274029;
+  --secondary-color: #2E3D36;
   --titles-margin-top: 1.5rem;
   --titles-margin-sides: 1rem;
   --titles-margin-bottom: 0.5rem;
   --paragraphs-margin-topAndBottom: 0.5rem;
   --paragraphs-margin-sides: 1rem;
+  --footer-height : 20px;
 }
 
 /* Custom Font */
@@ -73,6 +74,67 @@ h6 {
   font-family: "ransom_note";
   src: url(/Assets/Fonts/ransom_note.ttf);
 }
+
+/*Header footer*/
+header .logo {
+  background-color: transparent;
+}
+header {
+  color:#ffffff;
+  text-align: center;
+  background-color: #2E3D36;
+  }
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  }
+header nav a{
+  color: rgb(247, 244, 244);
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: 'Raleway', sans-serif;
+  }
+  header nav a:hover {
+    color:rgb(81, 179, 78);
+    border-bottom: 1px solid rgb(81, 179, 78);
+  }
+
+header .principal {
+  margin-top: 40px;
+  }
+
+.footer-relative {
+  position: relative;
+  min-height: calc(83vh - var(--footer-height));
+}
+
+footer {
+  background-color: #2E3D36;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  }
+footer .social-media {
+  display: flex;
+  }
+footer .social-media p {
+  margin-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  }
 
 /* Main Style */
 html {
@@ -129,6 +191,8 @@ p {
   flex-direction: column;
   margin: 0 10vw;
 }
+
+
 
 @media screen and (min-width: 641px) and (max-width: 1200px) {
   .faq-container {
@@ -285,6 +349,10 @@ select {
 .contact-grid-container #button,
 .contact-grid-container textarea {
   justify-self: center;
+}
+
+#button {
+  padding: 1rem 0 1rem;
 }
 
 /* .text-input:focus {

@@ -50,9 +50,12 @@ p,select {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 0.5rem;
     filter: grayscale(1);
+}
+
+.bordure {
     border: 1px solid black;
+    border-radius: 0.5rem;
 }
 
 img:hover {
@@ -88,9 +91,63 @@ button:hover {
     display: none;
 }
 
+header {
+    color:#ffffff;
+    text-align: center;
+    background-color: #2E3D36;
+    }
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    }
+header nav a{
+    color: rgb(247, 244, 244);
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;
+    }
+header nav a:hover {
+    color:rgb(81, 179, 78);
+    border-bottom: 1px solid rgb(81, 179, 78);
+    }
+header .principal {
+    margin-top: 40px;
+    }
 footer {
-    background-color: rgb(138, 134, 134);
-}
+    background-color: #2E3D36;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    }
+footer .social-media {
+    display: flex;
+    }
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    }
+
+header .logo {
+    background-color: transparent;
+    border: none;
+    }
+
+
+
+
+
 
 
     @media only screen  and (min-width: 560px) and (max-width: 1000px) {

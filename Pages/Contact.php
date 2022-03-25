@@ -8,12 +8,14 @@
   <meta name="author" content="author" />
   <meta name="keywords" content="keywords" />
   <link rel="stylesheet" href="/Assets/contact-faq-style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="/Assets/Images/icons8-sandal-64.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Serif:wght@100|Raleway:wght@300&display=swap">
 </head>
 
 <body>
   <!-- Header : included in PHP -->
-  <!-- <?php include '../Layouts/header.php' ?> -->
+  <?php include '../Layouts/header.php' ?> 
   <?php include '../Server/data.php' ?>
 
   <main>
@@ -66,7 +68,7 @@
   </main>
 
   <!-- Footer : included in PHP -->
-  <!-- <?php include '../Layouts/footer.php' ?> -->
+   <?php include '../Layouts/footer.php' ?> 
 </body>
 
 </html>

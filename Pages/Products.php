@@ -8,10 +8,12 @@
     <title>ClaquetteProject</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/Assets/Images/icons8-sandal-64.png">
 
 </head>
 <body>
-<!--<?php include 'header.php';?>/-->
+    <?php include '../Layouts/header.php' ?> 
 
     <div class="title"><h1>Claquettes</h1> </div>
 
@@ -22,7 +24,7 @@
     <div class = "grid-container">
 
         <div class = " Card1 " >
-            <div class = "image1"> <img src="/Assets/Images/Claquettes1.jpeg" alt="une paire de claquettes"> </div>
+            <div class = "image1"> <img class = "bordure" src="/Assets/Images/Claquettes1.jpeg" alt="une paire de claquettes"> </div>
             <div class= "textImage1"> <p class = " Modelclaquette"> Model 1 <br><br> taille :</p>
         
          <select class = " my-select-menu " >    
@@ -39,7 +41,7 @@
 
 
             <div class = " Card2 " >
-                <div class = "image2">  <img class ="model1" src="/Assets/Images/Claquettas.jpeg" alt="une paire de claquettes"> </div>
+                <div class = "image2">  <img class ="bordure" src="/Assets/Images/Claquettas.jpeg" alt="une paire de claquettes"> </div>
                 <div class = "textImage2"> <p> Model 2  <br> <br> taille :</p>
                     <select class = " my-select-menu " >    
                          <option> 36 </option>
@@ -54,7 +56,7 @@
             </div>
 
          <div class = " Card3 " >
-                <div class = "image3"> <img src="/Assets/Images/pexels-photo-8371657.jpeg" alt="une paire de claquettes"></div>
+                <div class = "image3"> <img class = "bordure" src="/Assets/Images/pexels-photo-8371657.jpeg" alt="une paire de claquettes"></div>
                 <div class ="textImage3">  <p> Model 3<br><br> taille : </p>
                     <select class = " my-select-menu " > 
                           <option> 36 </option>
@@ -69,7 +71,7 @@
          </div>
 
              <div class = " Card4 " >
-                     <div class = "image4"> <img src="/Assets/Images/CLAQUETAS.jpeg" alt="une paire de claquettes"> </div>
+                     <div class = "image4"> <img class = "bordure" src="/Assets/Images/CLAQUETAS.jpeg" alt="une paire de claquettes"> </div>
                      <div class = "textImage4">
                      <p> Model 4 <br><br> taille :</p>
                          <select class = " my-select-menu " >   
@@ -85,7 +87,7 @@
             </div>
 </div>
 
-<!--<?php include 'footer.php';?>-->
+    <?php include '../Layouts/footer.php' ?>    
 
 </body>
 </html>

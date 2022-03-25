@@ -14,10 +14,12 @@
 </head>
 
 <body>
-    <!-- Header : included in PHP -->
-        <?php include '../Layouts/header.php' ?>
+  
 
 <main class="footer-relative">
+  <!-- Header : included in PHP -->
+  <?php include '../Layouts/header.php' ?>
+
     <h1>Merci pour votre message !</h1>
 
     <section class="contact-treatment">
@@ -47,9 +49,13 @@
 
     </section>
 
+    <div class="push"></div>
+
+</main>
+
+
         <!-- Footer : included in PHP -->
         <?php include '../Layouts/footer.php' ?>
-</main>
 
 </body>
 

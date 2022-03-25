@@ -106,8 +106,8 @@ header .principal {
   }
 
 .footer-relative {
-  position: relative;
-  min-height: calc(83vh - var(--footer-height));
+  min-height: 100%;
+  margin-bottom: -6rem;
 }
 
 footer {
@@ -118,13 +118,16 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: 'Raleway', sans-serif;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
   }
+
+.footer .push {
+  height: 6rem;
+}
+
 footer .social-media {
   display: flex;
   }
+
 footer .social-media p {
   margin-right: 15px;
   border: 1px solid #fff;

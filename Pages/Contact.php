@@ -67,6 +67,8 @@
     </form>
   </main>
 
+  <div class="push"></div>
+
   <!-- Footer : included in PHP -->
    <?php include '../Layouts/footer.php' ?> 
 </body>

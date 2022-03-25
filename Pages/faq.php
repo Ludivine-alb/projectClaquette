@@ -14,10 +14,12 @@
 </head>
 
 <body>
+
+    <main class="footer-relative">
+
     <!-- Header : included in PHP -->
     <?php include '../Layouts/header.php' ?> 
 
-    <main>
         <h1 class="mainTitle faq-heading">Foire aux Qlaquettes</h1>
 
         <section class="faq-container">
@@ -72,6 +74,8 @@
             </div>
             
         </section>
+
+        <div class="push"></div>
     </main>
 
     <!-- Footer : included in PHP -->

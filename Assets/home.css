@@ -12,12 +12,15 @@ h1 {
     }  
 
 header{
-    height:80vh;
-    background-color: #4F772D;
-    color: rgb(0, 0, 0);
+    height:70vh;
+    background-color: #2E3D36;
+    color: rgb(255, 255, 255);
     text-align:center;
   }
-    
+   
+.logo {
+    background-position: -20px -20px;
+}
 
 header nav {
     display: flex;
@@ -27,7 +30,7 @@ header nav {
     }
 
 header nav a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-right: 10px;
     }
@@ -48,7 +51,7 @@ header .principal h4 {
     }
 
 .premieres-presentations {
-    background-color: #90A955;
+    background-color: #181f1c;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 30px;
@@ -64,9 +67,9 @@ header .principal h4 {
 
 .artisans {
     padding: 30px;
-    background: #4F772D;
+    background: #2E3D36;
     background-position: center; /*pour une image en background*/
-    color: black;
+    color: rgb(255, 255, 255);
     }
 
 .artisans h1, 
@@ -89,9 +92,9 @@ header .principal h4 {
 
 .partenaires {
     padding-top: 20px;
-    background-color: #90A955;
+    background-color: #181f1c;
     padding-bottom: 30px;
-    color: rgb(236, 227, 227);
+    color: rgb(255, 255, 255);
     }
 
 .partenaires h1 {
@@ -114,9 +117,9 @@ header .principal h4 {
     }
 
 footer {
-    background-color: #4F772D;
+    background-color: #2E3D36;
     padding: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -147,12 +150,11 @@ footer .social-media p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
-    
+}
     header{
     height:80vh;
-    background-color: #4F772D;
-    color: rgb(0, 0, 0);
+    background-color: #2E3D36;
+    color: rgb(255, 255, 255);
     text-align:center;
     }
         
@@ -163,4 +165,5 @@ header nav {
     padding: 20px;
     }
 }
+
 
